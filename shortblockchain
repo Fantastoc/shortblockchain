@@ -15,7 +15,7 @@ def calculate_hash(index, previous_hash, timestamp, data):
     return hashlib.sha256(value.encode('utf-8')).hexdigest()
 
 def create_genesis_block():
-    return Block(0, "0", int(time.time()), "Genesis Block", calculate_hash(0, "0", int(time.time()), "Genesis Block"), "Fantastico")
+    return Block(0, "0", int(time.time()), "Genesis Block", calculate_hash(0, "0", int(time.time()), "Genesis Block"), "Fantastoc")
 
 def create_new_block(previous_block, data, creator):
     index = previous_block.index + 1
@@ -32,7 +32,7 @@ num_blocks_to_add = 10
 
 for i in range(num_blocks_to_add):
     new_data = f"Block #{i+1} data"
-    creator = "Fantastico"
+    creator = "Fantastoc"
     new_block = create_new_block(previous_block, new_data, creator)
     blockchain.append(new_block)
     previous_block = new_block
