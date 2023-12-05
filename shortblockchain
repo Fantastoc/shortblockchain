@@ -23,11 +23,9 @@ def create_new_block(previous_block, data, creator):
     hash = calculate_hash(index, previous_block.hash, timestamp, data)
     return Block(index, previous_block.hash, timestamp, data, hash, creator)
 
-# Blockchain'in oluşturulması
 blockchain = [create_genesis_block()]
 previous_block = blockchain[0]
 
-# Yeni block'ların eklenmesi
 num_blocks_to_add = 10
 
 for i in range(num_blocks_to_add):
