@@ -27,7 +27,7 @@ Blockchain Initialization:
 The blockchain is initiated with the genesis block, and subsequent blocks are added to it.
 Personalization:
 
-To add a personal touch, each block includes a "Fantastico" tag as the creator.
+To add a personal touch, each block includes a "Fantastoc" tag as the creator.
 Conclusion:
 
 This code aims to demystify the fundamental concepts of blockchain by providing a clear and concise implementation in Python. Users can explore and modify the code to gain a deeper understanding of how blocks are linked, hashed, and added to the chain. It is recommended to further research and implement additional features for real-world blockchain applications.
